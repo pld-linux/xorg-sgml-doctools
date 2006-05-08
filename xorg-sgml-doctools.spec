@@ -6,7 +6,7 @@ Release:	1
 License:	MIT
 Group:		X11/Development/Tools
 Source0:	http://xorg.freedesktop.org/releases/individual/doc/%{name}-%{version}.tar.bz2
-# Source0-md5:	d08d4fd10ac46d8b4636efe4d8c0de74
+# Source0-md5:	1832fecfe3a0c11abeae2fc25b023ac1
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
