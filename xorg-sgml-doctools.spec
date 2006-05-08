@@ -5,7 +5,7 @@ Version:	1.0.1
 Release:	1
 License:	MIT
 Group:		X11/Development/Tools
-Source0:	http://xorg.freedesktop.org/releases/X11R7.0/src/doc/%{name}-X11R7.0-%{version}.tar.bz2
+Source0:	http://xorg.freedesktop.org/releases/individual/doc/%{name}-%{version}.tar.bz2
 # Source0-md5:	d08d4fd10ac46d8b4636efe4d8c0de74
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
