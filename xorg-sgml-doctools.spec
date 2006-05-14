@@ -19,7 +19,7 @@ Shared entity definitions for XFree86/X.org documentation.
 Wspó³dzielone definicje encji dla dokumentacji XFree86/X.org.
 
 %prep
-%setup -q -n %{name}-X11R7.0-%{version}
+%setup -q -n %{name}-%{version}
 
 %build
 %{__aclocal}
