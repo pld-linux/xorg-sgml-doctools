@@ -1,5 +1,5 @@
 Summary:	Shared entity definitions for XFree86/X.org documentation
-Summary(pl):	Wsp�dzielone definicje encji dla dokumentacji XFree86/X.org
+Summary(pl.UTF-8):   Współdzielone definicje encji dla dokumentacji XFree86/X.org
 Name:		xorg-sgml-doctools
 Version:	1.1.1
 Release:	1
@@ -17,8 +17,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Shared entity definitions for XFree86/X.org documentation.
 
-%description -l pl
-Wsp�dzielone definicje encji dla dokumentacji XFree86/X.org.
+%description -l pl.UTF-8
+Współdzielone definicje encji dla dokumentacji XFree86/X.org.
 
 %prep
 %setup -q -n %{name}-%{version}
