@@ -1,5 +1,5 @@
 Summary:	Shared entity definitions for XFree86/X.org documentation
-Summary(pl.UTF-8):   Współdzielone definicje encji dla dokumentacji XFree86/X.org
+Summary(pl.UTF-8):	Współdzielone definicje encji dla dokumentacji XFree86/X.org
 Name:		xorg-sgml-doctools
 Version:	1.1.1
 Release:	1
