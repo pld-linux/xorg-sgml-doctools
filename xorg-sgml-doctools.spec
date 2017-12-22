@@ -2,7 +2,7 @@ Summary:	Shared entity definitions for XFree86/X.org documentation
 Summary(pl.UTF-8):	Współdzielone definicje encji dla dokumentacji XFree86/X.org
 Name:		xorg-sgml-doctools
 Version:	1.11
-Release:	2
+Release:	3
 License:	MIT
 Group:		X11/Development/Tools
 Source0:	http://xorg.freedesktop.org/releases/individual/doc/%{name}-%{version}.tar.bz2
@@ -12,8 +12,7 @@ BuildRequires:	autoconf >= 2.60
 BuildRequires:	automake
 BuildRequires:	rpmbuild(macros) >= 1.446
 BuildRequires:	xorg-util-util-macros >= 1.8
-# just for dir
-Requires:	sgml-common
+Requires:	docbook-style-xsl-nons
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -29,7 +28,7 @@ do pakietów X.Org. Zwykle jest potrzebny tylko przy budowaniu ze
 źródeł, jeśli w efekcie ma być utworzona sformatowana dokumentacja.
 
 %prep
-%setup -q -n %{name}-%{version}
+%setup -q
 
 %build
 %{__aclocal}
