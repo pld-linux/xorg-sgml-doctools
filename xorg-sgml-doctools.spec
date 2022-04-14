@@ -2,7 +2,7 @@ Summary:	Shared entity definitions for XFree86/X.org documentation
 Summary(pl.UTF-8):	Współdzielone definicje encji dla dokumentacji XFree86/X.org
 Name:		xorg-sgml-doctools
 Version:	1.12
-Release:	1
+Release:	2
 License:	MIT
 Group:		X11/Development/Tools
 Source0:	https://xorg.freedesktop.org/releases/individual/doc/%{name}-%{version}.tar.bz2
@@ -35,7 +35,11 @@ do pakietów X.Org. Zwykle jest potrzebny tylko przy budowaniu ze
 %{__aclocal}
 %{__autoconf}
 %{__automake}
-%configure
+%configure \
+%if "%{_host_cpu}" != "x32"
+	--host=%{_host} \
+	--build=%{_host} \
+%endif
 
 %{__make}
 
