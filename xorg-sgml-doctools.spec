@@ -13,6 +13,7 @@ BuildRequires:	automake
 BuildRequires:	rpmbuild(macros) >= 1.446
 BuildRequires:	xorg-util-util-macros >= 1.8
 Requires:	docbook-style-xsl-nons >= 1.77
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
