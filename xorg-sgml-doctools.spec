@@ -1,18 +1,18 @@
 Summary:	Shared entity definitions for XFree86/X.org documentation
 Summary(pl.UTF-8):	Współdzielone definicje encji dla dokumentacji XFree86/X.org
 Name:		xorg-sgml-doctools
-Version:	1.11
-Release:	3
+Version:	1.12
+Release:	1
 License:	MIT
 Group:		X11/Development/Tools
-Source0:	http://xorg.freedesktop.org/releases/individual/doc/%{name}-%{version}.tar.bz2
-# Source0-md5:	ee6dc0a8a693a908857af328b2462661
-URL:		http://xorg.freedesktop.org/
+Source0:	https://xorg.freedesktop.org/releases/individual/doc/%{name}-%{version}.tar.bz2
+# Source0-md5:	748e4fdc384bb5ff8e7bfd82d31548c3
+URL:		https://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.60
 BuildRequires:	automake
 BuildRequires:	rpmbuild(macros) >= 1.446
 BuildRequires:	xorg-util-util-macros >= 1.8
-Requires:	docbook-style-xsl-nons
+Requires:	docbook-style-xsl-nons >= 1.77
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -49,6 +49,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc COPYING ChangeLog README
+%doc COPYING ChangeLog README.md
 %{_datadir}/sgml/X11
 %{_npkgconfigdir}/xorg-sgml-doctools.pc
